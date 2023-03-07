@@ -596,6 +596,7 @@ PYBIND11_MODULE(pyngp, m) {
 		.def_readwrite("visualize_cameras", &Testbed::Nerf::visualize_cameras)
 		.def_readwrite("glow_y_cutoff", &Testbed::Nerf::glow_y_cutoff)
 		.def_readwrite("glow_mode", &Testbed::Nerf::glow_mode)
+		.def_readwrite("extra_dim_idx_for_inference", &Testbed::Nerf::extra_dim_idx_for_inference)
 		;
 
 	py::class_<BRDFParams> brdfparams(m, "BRDFParams");
